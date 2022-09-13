@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<!--var ingen doctype på starten av koden - la til <!DOCTYPE html>  -->
+<html lang = "en">
+    <!-- lang = "en" manglet inni html`en - feil 2 -->
+    
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <!-- det manglet en string inne i <> i style.css - feil 3 -->
+            <title>Web eksamen del 1</title>
+        </head>
+        <body>
+        <!--body lå over head i koden - body skal alltid ligge under head - feil 4-->
+        <nav>
+            <h1>Logo</h1>
+                <ul>
+                <li> <a href="#">Boatswain schooner</a></li>
+                <li> <a href="#">Account lookout</a></li>
+                <li> <a href="#">Sail ho shrouds</a></li>
+                </ul>
+                <!-- var ikke ul i koden som gjør at html`en ikke koblet seg med css-filen, både på topp og bunn - feil 5 -->
+        </nav>
+        <header>
+            <h1>Yar Pirate Ipsum</h1>
+            <p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl.</p>
+            <a class="button">Les mer</a>
+        </header>
+        <main>
+            <!-- endret fra div til main - main var ikke en class i css - filen, endret til main - feil 6 -->
+            <article>
+                <h2>Prow scuttle</h2>
+                <!-- endret bort alle h1 tagger til h2 - alle skal ikke virke som overskrift - feil 7 -->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+            <!-- var ikke en slutt til <article> la til </article> på slutten av articlen - feil 8 -->
+            <article>
+                <h2>Jack Tar transom</h2>
+                <!-- endret h1 til h2 her også, for å ikke ha samme virkning som h1 taggen overskriften har - feil 9-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+            <article>
+                <h2>Trysail Sail</h2>
+                <!--endret h1 til h2 som før, får alle artiklenes font til å være lik størrelse, og virker ikke som h1, som overskriften er - feil 10-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+        </main>
+        <footer>
+            <span>Twitter</span>
+            <span>Facebook</span>
+            <span>Instagram</span>
+        </footer>
+    </body>
+</html>
